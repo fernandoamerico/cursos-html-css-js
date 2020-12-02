@@ -1,4 +1,13 @@
-# enoix
+---- SOBRE O CRIADOR -----
+Criador: Fernando "Oniuan" Américo
+Repositório para mais Projetos: https://github.com/fernandoamerico/enoix
+
+=== >> SEMPRE LEIA OS READMES << ===
+
+
+AVISO: SOU APENAS UM ESTUDANDTE TENTANDO DESCODIFICAR OS CONCEITOS E IDEAS DA PROGRAMAÇÃO PARA UM MUNDO DE NOVOS DESENVOLVEDORES, SE VOCÊ É UM PROFISSIONAL MAIS AVANÇADO, ESTOU ACEITANDO AJUDA E CORREÇÕES.
+
+
 
 ---- SOBRE O PROJETO ----
 
@@ -8,8 +17,12 @@ Você irá perceber que todos os projetos terão duas pastas, uma com comentári
 
 Estarei diariamente modificando tudo a fim de deixar tudo sempre melhor e mais simples, mas não menos completo, então é importante que você sempre busque por atualizações.
 
-Quero deixar claro que sou apenas uma pessoa que está tentando transmitir de forma mais clara o que eu aprendo todos os dias estudando.
+Quero deixar claro que não sou Sênior, tão pouco Pleno, sou apenas uma pessoa que está tentando transmitir de forma mais clara o que eu aprendo todos os dias estudando.
 
 Estou aberto e preciso de ajuda, então se você ver algo mal explicado ou faltando detalhes, por favor não tenha medo ou vergonha de comentar o erro, agradeço desde já.
+
+Por fim, se você recebeu esse projeto de uma terceira pessoa, por favor, busque ver se essa versão está atualizada ou então busque baixar a versão mais atualizado em meu repositório no github, deixo aqui o link:
+
+https://github.com/fernandoamerico/enoix
 
 Obrigado e bons estudos!

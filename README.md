@@ -4,7 +4,7 @@
 
 Esse projeto foi criado para facilitar a aprendizagem de pessoas que assim como eu, estão lutando diariamente para entender os conceitos complexos da programação e desenvolvimento de softwares.
 
-Você irá perceber que todos os projetos terão duas pastas, uma com comentários e outra sem, nos projetos comentados, você irá encontrar uma descrição para cada novo aspecto do código, cada linha nova que ainda não foi abordada terá uma descrição de sua funcionalidade. Isso porque tento descrever cada detalle do código para que você entenda tudo o que está sendo desenvolvido e usado.
+Você irá perceber que todos os projetos terão comentários em toda nova linha, sendo assim, quando você encontrar uma linha não comentada, significa que aquele determinado comando, função, tag e etc já foi explicado anteriormente. Isso porque tento descrever cada detalle do código para que você entenda tudo o que está sendo desenvolvido e usado.
 
 Estarei diariamente modificando tudo a fim de deixar tudo sempre melhor e mais simples, mas não menos completo, então é importante que você sempre busque por atualizações.
 

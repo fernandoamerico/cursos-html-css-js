@@ -1,0 +1,32 @@
+<!DOCTYPE html><!--  Antes de mais nada, o que você está lendo aqui é um COMENTÁRIO dentro do código, ou seja, isso não será mostrado na página e você pode e deve sempre comentar tudo o que você está fazendo nos seus códigos futuros, porque pode e vai acontecer de outras pessoas necesitarem implementar algo dentro do seu código e você deve manter tudo muito bem organizado, assim como você gostaria de receber novos projetos também muito bem organizados e comentados. Observe que no inicio desse código existe os sinais < !-- (Menor que, exclamassão, Menos, Menos) tudo junto, é assim que você indica ao HTML que isso é o inicio de um comentário, para fechar ou encerrar esse comentário, basta por -- > (Menos, Menos, Maior que) tudo junto e o seu comentário será encerrado. 
+    
+    Todos os arquivos HTML devem ser iniciado com a declaração "DOCTYPE html" que é usada para indicar ao navegador que tipo de arquivo é e o que está sendo executado. OBS: Segundo o site w3schools.com, a declaração "DOCTYPE html", não é uma TAG, mas apenas uma declaração ao browser. -->
+        
+        
+<html lang="pt-br"> <!--Agora Iniciaremos todo o desenvolvimento de nossa pagina com a tag "<html></html>" Entre essa abertura e fechamento de tag você irá por TODO o seu site, então é importante que você não esqueço de abrir ela imediatamente depois do "<DOCTYPE html>" e fechar ela no final da sua pagina. Depois você irá indicar ao HTML qual o idioma principal do seu site, então você pode por "lang="pt-br" para Português do Brasil, ou "lang="pt" para portugues de Portugal, ou "en" para Inglês ou "es" para Espanhol e assim por diante.-->
+    
+<!-- 
+== OBS: FALANDO UM POUCO DE ABERTURAS E FECHAMENTOS DE TAGS == 
+A grande maioria das tags em HTML possuem a necesidade de serem abertas e fechadas, como por exemplo, as tags <html></html> ou <body></body>. Para sinalizar a abertura de uma tag você deve usar os sinais <> e por dentro a tag que deseja abrir e para fechar é a mesma coisa mas você acrecentará uma barra "/" . OBS: Existe alguns casos que a tag não necessitará de um fechamento, como no caso da tag <meta> que não possui fechamentos.-->
+        
+            
+    <head><!--Depois da tag html, você irá abrir a tag <head></head> que seria uma especie de cabeçalho de nosso site, aqui você irá por as chamadas "metadados" do seu site, ou seja, informações internas as quais apenas o seu site irá usar para algo. Essas informações não são exibidas ao usuário mas elas muitas vezes são de suma importancia para o bom funcionamento do seu site, levando-o até a uma parada total se caso alguma de esses metadados não serem usadas ou configuradas corretamente. Iremos usar alguns metadados iniciais básicos e no decorrer dos projetos aprenderemos outros mais específicos.-->
+
+        <!-- Você irá usar a tag <meta> para configurar os metadados do seu site.  -->
+
+        <meta charset="UTF-8"> <!-- Uma das tag <meta> mais usadas em sites de lingua latinas é a tag "<meta charset="UTF-8">" com essa meta você irá indicar ao navegador como palavras que usam acentuação são inscritas, como as palavras: Pé, Café, João e Faça. Por padrão essas palavras acentuadas não são reconhecidas pelo o navegador, mas com o "<meta charset="UTF-8">" esse problema é solucionado totalmente. -->
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Uma outra meta muito utilizada é a <meta name="viewport" content="width=device-width, initial-scale=1.0">, com ela você irá configurar todo o seu site a ser responsível a celulares e tablets. Para configurar essa meta você precisa criar um atributo chamado "name" e chamar o valor "viewport" depois você deve usar o atributo content="" e preencher o campo entre "" com os valores "width=device-width, initial-scale=1.0". O primeiro valor indica que a largura do seu site deve ser sempre a largura do dispositivo que está sendo exibido e o segundo valor indica a escala do seu site onde "1.0" seria o equivalente a 100%. Esses valores são padrões e até onde eu fiquei sabendo, dificilmente você irá precisar mexer neles.-->
+
+
+        <title>Document</title> <!-- A tag <title></title> é obrigatório no head e é aqui que você deve por o título da sua pagina, esse título irá ser exibido na aba do navegador ao lado do favicon que é aquela pequena imagem que aparece nas abas do navegador quando você acessa algum site. -->
+
+    </head> <!--Não esqueça de fechar sua head -->
+
+
+<body><!-- Chegamos na parte onde ficará guardado todo o conteúdo visível do site, a tag <bady></bady> é o corpo do sue site e é aqui que você irá por tudo o que será visível no seu site. Mais adiante iremos ver como preencher essa área.-->
+
+</body><!--Não esqueça de fechar seu body -->
+
+</html><!--Não esqueça de fechar seu html -->

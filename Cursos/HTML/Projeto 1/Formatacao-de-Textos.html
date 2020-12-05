@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> 
+    
+    <head>
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formatação de Texto</title>
+
+    </head>
+
+    <body>
+
+        <h1>Título h1</h1><!-- "<h1></h1>" vem de heading 1, que é o mesmo de título. Você pode definir até 6 tipos que vão de "<h1>" até "<h6>" que irão variar de tamanho mas que não tem essa como função principal. A verdadeira função de uma tag h1-6 é simplesmente definir a ordem de prioridade ou importancia de um título em um texto, sendo o <h1> o mais importante e o <h6> seendo o menos importante. É altamente recomendado ter apenas um <h1> em uma página e os demais podem variar desde o <h2> até o <h6> de acordo com a importancia do título. <h1> sempre será o mais importante na ordem e o <h6> o menos importante. -->
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias voluptas, inventore suscipit qui molestias numquam illo optio odit quidem sapiente nulla vel a unde iste ea quam eum aut!</p><!-- A tag <p></p> representa os blocos de textos ou parágrafos. Um parágrafo é a forma mais primária de um texto visível em um site e difinitivamente é a tag principal quando o assumto é texto.-->
+        
+        <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias voluptas, inventore suscipit qui molestias numquam illo optio odit quidem sapiente nulla vel a unde iste ea quam eum aut! </span><!-- A tag span é usada para escrever um texto sem quebrar linhas, isso porque a tag "span" é um tag "in-line" ou seja, o próximo elemento depois da span será posto ao lado do span e não abaixo como acontece com o "<p></p>" -->
+        <b>Lorem ipsum</b><!--  Use esa tag para deixar o texto negrito -->
+        <i>Lorem ipsum</i><!-- Use esa tag para deixar o texto italico -->
+        <u>Lorem ipsum</u><!-- Use esa tag para deixar o texto sublinhado -->
+        <s>Lorem ipsum</s><!-- Use esa tag para deixar o texto riscado -->
+        <blockquote>Lorem ipsum</blockquote><!-- Use esa tag para dar um espaço a esquerda antes do inicio do texto.  -->
+
+        <!-- Oberserve nos exemplos, que todos as tags, excerto a tag <blockquote>, são do tipo "in-line" ou seja, elas ficam um ao lado do outro, já a tag "<blockquote>" é do tipo "block", que, assim como a tag <p> e <h1-6>, ela também desce uma linha antes de iniciar seu texto. Isso acontece porque as tags <p> e <blockquote> são usados para criação de blocos de texto e as demas tags são usadas para customização desses textos. A tag <span> por exempro, você pode usar alguns atributos especiais para destacar o texto que estiver dentro da tag. -->
+
+        <!-- VEJA COMO FICARIA UM TEXTO TOTALMENTE CUSTOMIZADO USANDO ESSAS TAGS -->
+        <p>Lorem ipsum dolor <i>sit amet consectetur, adipisicing elit.</i> Necessitatibus hic fugiat magni exercitationem iusto totam, <b>ratione at ducimus</b> voluptates quos <u>enim delectus officiis</u> fuga quisquam, <s>asperiores doloremque</s> corporis omnis maxime!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur <span style="color:red;">adipisicing elit. Vero accusantium nam quae <b><i> earum,</i></b> minus </span> fugit dolor illo obcaecati ipsam fuga est rem suscipit quam. Alias, delectus. Illo consectetur sed perferendis?</p>
+
+        <!-- Veja que a tag "<span>" é a unica que precisou ter um novo atributo chamado "style" para customizar a cor do texto para "red". Esse tipo de customização iremos aprender melhor quando customizar nossa pagina com CSS.
+
+        Observe também que é possivel por mais de uma tag aplicada no mesmo texto, como no caso do texto dentro de "<span>" que depois recebeu a tag "<b>" e dentro de "<b>" foi posto a tag "<i>", deixando o texto, vermelho por causa da tag "<span>", negrito por causa da tag "<b>" e itálico por causa da tag "<i>".-->
+    
+        <!-- Por fim, existem outras maneiras de customizar um texto, mas isso iremos ver com mais detalhes na parte de CSS -->
+
+    </body>
+</html>

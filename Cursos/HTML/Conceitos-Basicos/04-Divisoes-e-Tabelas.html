@@ -6,12 +6,72 @@
         <title>Divisões e Tabelas</title>
     </head>
     <body>
-        <div></div> <!--<div></div> Basicamente significa uma divisão, é uma tag usada para fazer divisões em nossa pagina para organizar o formado do seu site. -->
+
+        <!-- DIVS -->
+        <div></div> <!--<div></div> Basicamente significa uma divisão, é uma tag muito usada para fazer divisões em nossa pagina para organizar o formado do seu site. Mais adiante iremos usar MUITO as divs pois elas são partes fundamentais de um site. -->
         
-        <table>
-            <tr>
-                <td></td>
-            </tr>
+
+
+        <!-- TABELAS -->
+        <table> <!-- Para criar uma tabela em html usa-se a tag <table></table> onde <table> é o corpo geral da tabela, <tr></tr> são as linha e <td></td> são as colunas. Você pode especificar quantas colunas haverá dentro de uma linha apenas colocando a quantidade de <td> de acordo com a quantidade de colunas que você deseja e para criar uma nova linha apenas crie uma nova <tr> -->
+
+            <th><!-- Para criar um cabeçalho na sua tabela, você pode usar a tag <th></th>-->
+                <td> Nome</td> <!-- Coluna A -->
+                <td> Idade</td> <!-- Coluna B -->
+                <td> Cargo</td> <!-- Coluna C -->
+            </th>
+
+            <tr><!-- Linha 1 -->
+                <td>Funcionário 1</td> <!-- Essa primeira coluna normalmente fica o objeto principal que irá receber os atributos das proximas colunas. Depende muito do estilo de tabela que você deseja montar. -->
+
+                <td>José</td> <!-- Coluna A -->
+                <td>45</td> <!-- Coluna B -->
+                <td>Porteiro</td> <!-- Coluna C -->
+
+            </tr><!-- Não esqueça de fechar sua linha -->
+
+
+            <tr><!-- Linha 2 -->
+                <td>Funcionário 2</td> <!-- Essa primeira coluna normalmente fica o objeto principal que irá receber os atributos das proximas colunas. Depende muito do estilo de tabela que você deseja montar. -->
+
+                <td>Debora</td> <!-- Coluna A -->
+                <td>33</td> <!-- Coluna B -->
+                <td>Recepcionista</td> <!-- Coluna C -->
+
+            </tr><!-- Não esqueça de fechar sua linha -->
+
+        </table> <!-- Não esqueça de fechar sua tabela -->
+
+        <!-- Para customizar uma tabela, você pode usar alguns atributos ou usar CSS, mas como nesse projeto não iremos usar CSS ainda, então vamos usar alguns atributos para modificar nossa tabela e customiza-la um pouco. -->
+
+        <table border="1" width="400" align="center">
+            <!-- Observe que usando o atributo "border" definimos um valor de largura da borda de nossa tabela, que no nosso caso foi de 1 pixel, depois configuramos a largura de nossa tabela como um todo com o atributo "width" que foi de 400 pixel e por fim centralizado a tabela no meio da pagina usando o atributo "align". -->
+            
+            <th><!-- Para criar um cabeçalho na sua tabela, você pode usar a tag <th></th>-->
+                <td> Nome</td> <!-- Coluna A -->
+                <td> Idade</td> <!-- Coluna B -->
+                <td> Cargo</td> <!-- Coluna C -->
+            </th>
+
+            <tr><!-- Linha 1 -->
+                <td>Funcionário 1</td> <!-- Essa primeira coluna normalmente fica o objeto principal que irá receber os atributos das proximas colunas. Depende muito do estilo de tabela que você deseja montar. -->
+
+                <td>José</td> <!-- Coluna A -->
+                <td>45</td> <!-- Coluna B -->
+                <td>Porteiro</td> <!-- Coluna C -->
+
+            </tr><!-- Não esqueça de fechar sua linha -->
+
+
+            <tr><!-- Linha 2 -->
+                <td>Funcionário 2</td> <!-- Essa primeira coluna normalmente fica o objeto principal que irá receber os atributos das proximas colunas. Depende muito do estilo de tabela que você deseja montar. -->
+
+                <td>Debora</td> <!-- Coluna A -->
+                <td>33</td> <!-- Coluna B -->
+                <td>Recepcionista</td> <!-- Coluna C -->
+
+            </tr><!-- Não esqueça de fechar sua linha -->
+
         </table>
     </body>
 </html>

@@ -1,0 +1,31 @@
+/* Agora que já sabemos qual o identificador usar, basta indicar ao CSS qual a tag que você deseja customizar, para isso usamos #name para IDs e .name para classes, veja: */
+
+#div1 {
+    background:red;
+}
+
+/* Agora, caso você queira modificar alguma tag dentro de outra tag, você pode fazer de duas maneiras. A primeira é mais genérica e apenas indica que uma tag está dentro de outra, veja: */
+
+
+#div1 h1 {
+    color:white;
+}
+
+/* A segunda maneira, é mais direta e indica que uma tag está diretamente dentro de outra tag, ou seja, uma diretamente depois da outra, veja: */
+
+
+#div2 > h1 {
+    color:green;
+}
+
+/* Outra maneira de indentificar qual tag queremos modificar é usando Classes, veja:  */
+
+.div3 {
+    background: yellow;
+}
+
+.div3 h1{
+    color: #232323;
+}
+
+/* A diferença de ID para Classes é que o ID sempre será posto de forma única e nunca poderá ser repetido em diferentes tags e a classe pode ser usada em varias tags sem problemas. */

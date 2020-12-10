@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Formulários</h1>
+
+
+    <form> <!-- Para criar um formulário, basta apenas usar as tags <form></form> e dentro colocar todas as áreas do formulário que deseja. -->
+        Login:<br>
+        <input type="text" ><br> <!-- Para criar uma área de texto, você usa a tag <input> e dentro o atributo type="text" e assim aparecerá dentro do formulário uma área onde o usuário poderá preencher com um texto. -->
+        
+        Senha:<br>
+        <input type="password"><br><br> <!-- Já para receber senhas, você usará a mesma tag, mas com o type="password". Com esse atributo, todos os dados inscritos nesse campo são substituídos por pontos, assim a senha do usuário é protegida para que ninguem próximo veja. -->
+
+        <input type="button" value="Login"> <!-- Por fim temos o input para o botão que irá iniciar os envios dos dados do formulário. São dois types, "button" e "submit" - Mais a diante iremos entender a diferença entre os dois - e também temos o atributo "value" que é o texto que irá aparecer dentro do botão, você pode colocar o texto que achar necessário. -->
+
+    </form> <!-- Não esqueça de fechar seu formulário -->
+
+    <br>
+
+    <h1>Cadastro</h1>
+    <form>
+        Login:
+        <input type="text"><br>
+        Sexo:
+        <br>
+        <input type="radio" name="sexo">Masculino <!-- Outro type bem conhecido e muito usado é o type "radio" onde o usuário tem duas ou mais opções para selecionar, mas apenas uma das opções podem ser escolhida. Para garantir que os "radios" fiquem juntos por categoria e não se misturem com outros radios de outras opções, você pode categorizar eles usando o atributo "name" e assim escolher qual a categoria que o radio em especifico pertece. Assim os radios com o mesmo "name" sempre estarão agrupados na mesma categoria evitando que o usuário escolha mais de uma opção por categoria.-->
+        <br>
+        <input type="radio" name="sexo">Feminino <!--  -->
+        <br>
+        Interesses:
+        <br>
+        <input type="checkbox"> Futebol<br> <!-- Outra opção de escolha é o type "checkout", diferente do "radio" aqui o usuário pode escolher diversas opções diferentes ao mesmo tempo. -->
+        <input type="checkbox"> Cursos<br>
+        <input type="checkbox"> Eletronicos<br>
+
+        Estado:
+        <br>
+        <select> <!-- Por fim tempos a tag <select></select> que é usada para criar uma lista de opções as quais o usuário deve escolher uma. Dentro dessa tag colocamos a tag <option></option> que são os itens disponiveis para o usuário escolher.-->
+
+            <option>SP</option> <!-- Cada tag representa uma opção em nossa lista e você pode colocar quantas achar necessário, mas lembre-se que cada tag deve ser aberta e fechada e entre a abertura e o fechamento você deve colocar o texto que será exibido ao usuário. -->
+            <option>MG</option><!-- Não esqueça de fechar com </option> -->
+            <option>RJ</option>
+            <option>RS</option>
+
+        </select><!-- Não esqueça de fechar com </select> -->
+
+        <br>
+        Observações:
+        <br>
+        <textarea></textarea> <!-- Nossa última tag é o campo <textarea></textarea> que é usado para criar um campo de texto longo, onde o usuário poderá colocar um texto maior, além de controlar o tamanho da caixa de escrita. -->
+
+        <br>
+        <br>
+        <input type="submit" value="Cadastrar"><!-- Outra vez, antes de encerrar o formulário, não esqueça de por um botão para enviar os dados a algum lugar para serem processados. -->
+    </form> <!-- Não esqueça de fechar seu formulário -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* ### PROJETO 03-CSS-Externo.html ### */
+/* Agora pra modificar uma tag no projeto, basta indicar qual a tag você deseja modificar e o que você deseja customizar */
+p {
+    color:red;
+}
+
+/* ### PROJETO 04-IDs-e-Classes.html ### */
+/* Customize a tag <p> usando o ID ou a Classe, veja: */
+
+/* Se você quer usar a tag que tem a ID */
+#p-principal {
+    color: green;
+}
+
+/* Se você quer usar a tag que tem a class */
+
+.p-principal {
+    color: pink;
+}

@@ -1,0 +1,89 @@
+.cm {
+    background-color: red;
+    width: 1cm;
+    height: 1cm;
+}
+
+.mm {
+    background-color: red;
+    width: 1mm;
+    height: 1mm;
+}
+
+.in {
+    background-color: red;
+    width: 1in;
+    height: 1in;
+}
+
+.px {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.pt {
+    background-color: red;
+    width: 10pt;
+    height: 10pt;
+}
+
+.pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}   
+
+/* Unidades de Medidas referenciais em CSS */
+
+.pai {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.filho {
+    background-color: blue;
+    font-size: 17px;
+}
+
+.texto-1 {
+    font-size: 16px;
+}
+
+.text-em {
+    font-size: 1.5em;
+}
+
+.neto {
+    background-color: yellow;
+    width: 10em;
+}
+
+.rem {
+    font-size: 1.2rem;
+}
+
+.vw {
+    background-color: red;
+    width: 50vw;
+    height: 50px;
+}
+
+.vmin {
+    background-color: red;
+    width: 50vmin;
+    height: 50px
+}
+
+.porcentagem-pai {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.porcentagem-filho {
+    background-color: yellow;
+    width: 60%;
+    height: 20px;
+}

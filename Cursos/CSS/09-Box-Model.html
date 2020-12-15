@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/07-style.css">
+    <title>Box Model</title>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <p>Sempre que você usar margens, paddings e bordas você deve observar os tamanhos dos elementos para que eles não
+        sejam deformados ou percam seus tamanhos por ter uma margem muito grande ou um padding mal calculado</p>
+
+    <br>
+    <h3>Usando Outline</h3>
+    <p>Quando usamos bordas, margens e paddins, esses valores interagem com esses mesmos valores de outros elementos, por exemplo, a margem de uma div pode interagir com a margem de outra div, podemos controlar um mas cusando "outline" esse tipo de intarassão não acontecerá, porque o outline flutua em cima dos outros elementos do html. </p>
+    <br>
+    <h4>Sem margem mas com bordas e padding 10x10</h4>
+    <div class="container"> 100x100</div>
+    <div class="box"></div>
+    <br>
+    <br>
+    <br>
+    <h4>Sem margem e bordas só com padding 10x10</h4>
+    <div class="content">100x100</div>
+    <div class="box"></div>
+    <br>
+    <br>
+    <br>
+    <h4>Só com Outline</h4>
+    
+    <div class="outline">100x100</div>
+    <div class="box"></div>
+    <p>Observe que o quadrado preto agora está um pouco menor, isso porque a margem(outline) do quadrado amarelo está cobriando parte do corpo do quadrado negro.</p>
+    <br>
+    <br>
+    <h4>box-sizing: border-box</h4>
+    <p>Agora imagine que você precisa de um elemento que tenha uma borda de um tamanho X mas que ele não pode ficar maior do que o seu temanho original, o que podemos fazer para resolver esse problema? Usammos a propriedade box-sizing: border-box;
+    Com essa propriedade, as bordas de um elemento não irá crescer mas para do elemento, aumentando o seu tamanho, ela irá diminuir o tamanho original do elemento e crescerar para dentro, assim deixando o tamanho de fora do elemento sem modificação.
+    </p>
+    Sem border-box
+    <div class="sem-box-sizing"></div>
+    <div class="box"></div>
+    <br>
+    Com border-box
+    <div class="com-box-sizing"></div>
+    <div class="box"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/04-style.css" rel="stylesheet">
+
+    <title>Unidades de Medida</title>
+</head>
+
+<body>
+    <h2>Unidades de Medidas Fixas em CSS</h2>
+    <h3>Centimentros: cm</h3>
+    <div class="cm"></div>
+
+    <h3>Milimetros: mm</h3>
+    <div class="mm"></div>
+
+    <h3>Polegadas: in</h3>
+    <div class="in"></div>
+
+    <h3>Pixels: px</h3>
+    <div class="px"></div>
+
+    <h3>Ponto: pt</h3>
+    <p>Esse valor é diferente dos demais, porque o tamanho dele irá variar com a densidade de qualidade do monitor. Se o
+        monitor tiver muita densidade, ele irá ter mais de um pixel em seu corpo, se tiver pouca densidade ele terá o
+        tamanho de um pixel.</p>
+    <div class="pt"></div>
+
+    <h3>Picas: pc</h3>
+    <p>Essa unidade é equivalente a 12 pontos.</p>
+    <div class="pc"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Unidades de Medidas referenciais em CSS</h2>
+
+    <h3>Texto Padrão</h3>
+    <p>Esse é um texto padrão</p>
+
+    <br>
+
+    <h3>Tamanho de Fontes: font-size: px;</h3>
+    <div class="pai">
+        <p> "Texto modificando com font-size"</p>
+
+        <br>
+
+        <div class="filho">
+            <h3>Tamanho de Fontes: font-size: em;</h3>
+            <p class="texto-1">O "em" irá indicar que o elemento que receber esse tamanho, terá X vezes o tamanho do
+                elemento anterior. Respeitando a ordem das "divs". <br><br>
+
+                OBS: Só funciona com tamanhos em font-size, mas pode ser aplicado em outros elementos o qual irá mudar
+                de tamanho, de acordo com o tamanho aplicado na ultima font-size.</p>
+            <div class="neto">
+                <p class="text-em">Esse texto tem font-size: 1.5em; aplicado.</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h3>Tamanho de Fontes: font-size: rem;</h3>
+    <p>O tamanho "rem" ele funciona parecido com o tamanho "em" mas ele não irá se basear no tamanho da fonte do ultimo elemento, mas sim no tamanho da fonte do elemento rais, que seria nosso HTML.</p>
+
+    <p class="rem">Texto com tamanho modificando com font-size: rem;</p>
+
+    <br>
+
+    <h3>Tamanho em vw;</h3>
+    <p>O vw irá mudar a largura de uma div de acordo com o tamanho da janela do browser. OBS: 100vw = 100% da largura do navegador.</p>
+    <div class="vw"></div>
+
+    <br>
+
+    <h3>Tamanho em vmin/vmax;</h3>
+    <p>Vmin irá calcular a largura de uma div de acordo com a MENOR(por isso o valor "min") dimensão da janela, ou seja, se a janela está mais achatada, a menos dimensão é a altura, se a janela está mais fina, a menor dimensão seria a largura e é baseado nisso que Vmin irá calcular. OBS: 100vmin = 100%</p>
+
+    <div class="vmin"></div>
+
+    <p>Também funciona quando você usar o vmax para calcular de acordo com a MAIOR dimensão.</p>
+
+    <br>
+
+    <h3>Tamanho em %;</h3>
+    <p>Calcule os valores usando %. Essa % sempre será calculada usando valores do elemento pai.</p>
+    <div class="porcentagem-pai">
+        <div class="porcentagem-filho"></div>
+    </div>
+
+
+</body>
+
+</html>

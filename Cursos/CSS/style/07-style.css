@@ -1,0 +1,51 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+    background-color: black;
+    width: 100px;
+    height: 25px;
+}
+
+.container {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid green;
+    box-sizing: border-box;
+    
+}
+
+.content {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.outline {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    outline: 15px solid palevioletred;
+    
+}
+
+.sem-box-sizing {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border: 10px solid brown;
+}
+
+.com-box-sizing {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border: 10px solid brown;
+    box-sizing: border-box;
+}

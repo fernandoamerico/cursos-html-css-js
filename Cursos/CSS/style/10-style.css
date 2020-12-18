@@ -1,0 +1,25 @@
+ul {
+    background-color: aqua; 
+    list-style-type:circle;
+    list-style-position: inside;
+    margin: 5px;
+    padding: 5px;
+}
+ol {
+    background-color:aquamarine;
+    list-style-type:lower-alpha;
+    list-style-position: inside;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+li {
+    padding: 10px 20px;
+    border: 1px solid;
+}
+
+.l1 {
+    background-color: burlywood;
+    list-style-image: url("https://image.flaticon.com/icons/png/128/1828/1828644.png")
+}

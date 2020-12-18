@@ -1,0 +1,25 @@
+a {
+    background-color: rebeccapurple;
+    border: 10px solid yellow;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+    background-color: red;
+    color: rebeccapurple;
+    border: 10px solid green;
+}
+
+a:visited {
+    background-color: green;
+}
+
+a:active {
+    background-color: brown;
+    color: white;
+    border: none;
+}

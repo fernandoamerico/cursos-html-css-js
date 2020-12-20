@@ -1,0 +1,62 @@
+.p1 {
+    background-color: blueviolet;
+    color: white;
+}
+
+.div1 {
+    background-color: greenyellow;
+}
+
+.div2 {
+    background-color: palevioletred;
+}
+
+.p2 {
+    background-color: coral;
+}
+
+.p3 {
+    background-color: khaki;
+}
+
+.div3 {
+    background-color: yellowgreen;
+    padding: 5px;
+}
+
+.p4 {
+    background-color: teal;
+}
+
+.div4 {
+    background-color: peru;
+}
+
+.p5 {
+    background-color: purple;
+    color: white;
+}
+
+.span1 {
+    background-color: royalblue;
+    height: 100px; /* Não se aplica largura ou altura */
+    width: 100px; /* Não se aplica largura ou altura */
+}
+
+.div5 {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+.p6 {
+    background-color: yellow;
+    color: black;
+}
+
+.span2 {
+    background-color: brown;
+    display: inline-block;
+    width: 1000px;
+    height: 200px;
+}

@@ -1,0 +1,23 @@
+.auto {
+    background-color: darkkhaki;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.right {
+    background-color:darkorchid;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+.img {
+    background-color:darkred;
+    text-align: center;
+}
+
+.img2 {
+    display: block;
+    margin: auto;
+}

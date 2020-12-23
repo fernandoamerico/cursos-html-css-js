@@ -1,0 +1,49 @@
+.normal {
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+.static {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.relative {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+.fixed {
+    background-color: #00ff5f;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+.absolute {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    position: absolute;
+}
+
+.sticky {
+    background-color:purple;
+    color: white;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 100px;
+
+}

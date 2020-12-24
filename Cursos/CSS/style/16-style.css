@@ -1,0 +1,44 @@
+.card1 {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-01 {
+    background-color:greenyellow;
+    line-height: 200px;
+}
+
+.card2 {
+    background-color:thistle;
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.card-02 {
+    background-color: orangered;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.p {
+    background-color:white;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

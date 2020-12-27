@@ -1,126 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-    background-color:rgb(17, 17, 17);
-    color: while;
-    margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
-    position: relative;
+  max-width: 1000px;
+  margin: auto;
 }
 
 header {
-    background-color: #548be6;
-    padding: 10px;
-}
-header h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    font-size: 23px;
-    
+  background-color: #548be6;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
 }
 
 .bg {
-    height: 500px;
-    background-image: url(/Cursos/PROJETOS/01/img/palestra.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position-y: top;
+  padding: 20px;
+  background-image: url(/Cursos/PROJETOS/01/img/palestra.jpeg);
+  overflow: hidden;
+  background-size: cover;
 }
 
 .formulario {
-    background-color:rgba(197, 195, 218, 0.534);
-    color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid white;
-    width: 280px;
-    height: 370px;
-    float: right;
-    position: relative;
-    top: 50%;
-    right: 15%;
-    transform: translate(-15%, -50%);
-    border-radius: 7px;
-    padding: 0px 10px;
-    box-sizing: border-box;
-    
-}
-.formulario h3 {
-    text-align: center;
-}
-form {
-    text-align: center;
-
+  background-color: rgba(197, 195, 218, 0.801);
+  color: rgb(39, 39, 39);
+  width: 230px;
+  padding: 20px;
+  float: right;
+  border-radius: 2px;
 }
 
-form input {
-    color: white;
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    background-color: #548be6;
+.formulario h3,
+.formulario p {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-form select {
-    color: white;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: none;
-    background-color: #548be6;
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5px 0px;
+  padding: 10px;
+  border: none;
 }
 
-.button {
-    background-color: white;
-    color: #548be6;
-    border: 1px solid #548be6;
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(../img/icon-8px.png);
+    background-repeat: no-repeat;
+    background-position-x: calc( 100% - 10px);
+    background-position-y: center;
+}
+
+input[type="submit"] {
+  background-color: #548be6;
+  color: white;
 }
 
 .palestrante {
-    color: white;
-    height: 400px;
+  text-align: center;
+  padding: 40px;
 }
-.centralizar {
-    background-color:rgb(36, 36, 36);
-    width: 800px;
-    height: 300px;
-    padding: 50px;
-    box-sizing: border-box;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 
-
-}
 .foto {
-    background-image: url(/Cursos/PROJETOS/01/img/palestrante.jpg);
-    background-position-y: -5px;
+    width: 140px;
+    margin-right: 10px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-size: 100%;
-    background-position: cover;
-    background-repeat: no-repeat;
-    width:  200px;
-    height: 200px;
-    float: left;
 }
 
 .desc {
-    width: 470px;
-    height: 200px;
-    float: right;
+    text-align: left;
+    display: inline-block;
+    width: 45%;
 }
 
 .desc h3 {
-    color: #548be6;
+  color: #548be6;
 }
 
 footer {
-    color: rgb(126, 125, 125);
-    background-color:rgb(36, 36, 36);
-    padding: 10px;
-    text-align: center;
+  color: rgb(126, 125, 125);
+  background-color: rgb(36, 36, 36);
+  padding: 10px;
+  text-align: center;
 }

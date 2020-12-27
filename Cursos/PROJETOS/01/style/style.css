@@ -1,6 +1,8 @@
 body {
     background-color:rgb(17, 17, 17);
+    color: while;
     margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container {
     position: relative;
@@ -50,7 +52,7 @@ header h1 {
 }
 form {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 form input {
@@ -77,14 +79,15 @@ form select {
 }
 
 .palestrante {
-    background-color:hotpink;
     color: white;
-    height: 500px;
+    height: 400px;
 }
 .centralizar {
-    background-color: red;
+    background-color:rgb(36, 36, 36);
     width: 800px;
-    height: 400px;
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
     position: relative;
     left: 50%;
     top: 50%;
@@ -93,15 +96,31 @@ form select {
 
 }
 .foto {
-    background-color: green;
+    background-image: url(/Cursos/PROJETOS/01/img/palestrante.jpg);
+    background-position-y: -5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
     width:  200px;
     height: 200px;
-    position: relative;
+    float: left;
 }
 
 .desc {
-    background-color:hotpink;
-    width: 200px;
+    width: 470px;
     height: 200px;
-    float: left;
+    float: right;
+}
+
+.desc h3 {
+    color: #548be6;
+}
+
+footer {
+    color: rgb(126, 125, 125);
+    background-color:rgb(36, 36, 36);
+    padding: 10px;
+    text-align: center;
 }

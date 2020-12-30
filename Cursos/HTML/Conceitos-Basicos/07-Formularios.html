@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulários</h1>
+    <p> Um formulário trabalha com 2 tipos de metodos que são "GET" ou "POST" e eles são indicados com os atributos
+        <strong>method=""</strong>.
+
+        A diferença entre o GET e o POST é que o GET os dados colocados no formulário aparecerão na barra de endereço e
+        o POST será ocultado e o usuário não verá nada.</p>
+
+    <h2>Login</h2>
+    <form method="GET" action="/">
+        <!-- Para criar um formulário, basta apenas usar as tags <form></form> e dentro colocar todas as áreas do formulário que deseja. -->
+        Usuario:<br>
+        <input type="text"><br>
+        <!-- Para criar uma área de texto, você usa a tag <input> e dentro o atributo type="text" e assim aparecerá dentro do formulário uma área onde o usuário poderá preencher com um texto. -->
+
+        Senha:<br>
+        <input type="password"><br><br>
+        <!-- Já para receber senhas, você usará a mesma tag, mas com o type="password". Com esse atributo, todos os dados inscritos nesse campo são substituídos por pontos, assim a senha do usuário é protegida para que ninguem próximo veja. -->
+
+        <input type="button" value="Login">
+        <!-- Por fim temos o input para o botão que irá iniciar os envios dos dados do formulário. São dois types, "button" e "submit" - Mais a diante iremos entender a diferença entre os dois - e também temos o atributo "value" que é o texto que irá aparecer dentro do botão, você pode colocar o texto que achar necessário. -->
+
+    </form> <!-- Não esqueça de fechar seu formulário -->
+
+    <br>
+
+    <h3>Value</h3>
+    <p>Em alguns inputs, como o checkbox, você deve por um value="" para indetificar individualmente cada umas das
+        opções. O Value em outras palavras seria um valor real de um determinado imput, na maioria das vezes ele conterá
+        o valor real de tal imput e na maioria das vezes ele fica imbutido e o usuário não enxerga esse valor.</p>
+
+    <br>
+    <br>
+    <h3>Name</h3>
+    <p>Não esqueça de por o name="" para indicar qual o elemento é que o botão de submit está se referindo. Se você não
+        por o atributo name="" o elemento não irá ser enviado para o backend já que ele não sabe o que é aquele
+        elemento.</p>
+    <br>
+    <br>
+
+    <h2>Cadastro</h2>
+    <form>
+        Login:
+        <input type="text"><br>
+        Sexo:
+        <br>
+        <input type="radio" name="sexo" checked>Masculino
+        <!-- Outro type bem conhecido e muito usado é o type "radio" onde o usuário tem duas ou mais opções para selecionar, mas apenas uma das opções podem ser escolhida. Para garantir que os "radios" fiquem juntos por categoria e não se misturem com outros radios de outras opções, você pode categorizar eles usando o atributo "name" e assim escolher qual a categoria que o radio em especifico pertece. Assim os radios com o mesmo "name" sempre estarão agrupados na mesma categoria evitando que o usuário escolha mais de uma opção por categoria.-->
+        <br>
+        <input type="radio" name="sexo">Feminino
+        <!--  -->
+        <br>
+        Interesses:
+        <br>
+        <input type="checkbox"> Futebol<br>
+        <!-- Outra opção de escolha é o type "checkout", diferente do "radio" aqui o usuário pode escolher diversas opções diferentes ao mesmo tempo. -->
+        <input type="checkbox"> Cursos<br>
+        <input type="checkbox"> Eletronicos<br>
+
+        Estado:
+        <br>
+        <select name="Estados" size="4" multiple>
+            <!-- Por fim tempos a tag <select></select> que é usada para criar uma lista de opções as quais o usuário deve escolher uma. Não esqueça que você deve colocar um name="" para indentificar que "select" é esse. Dentro dessa tag colocamos a tag <option></option> que são os itens disponiveis para o usuário escolher.-->
+
+            <option volue="SP">SP</option>
+            <!-- Cada tag representa uma opção em nossa lista e você pode colocar quantas achar necessário, mas lembre-se que cada tag deve ser aberta e fechada e entre a abertura e o fechamento você deve colocar o texto que será exibido ao usuário. -->
+            <option value="MG">MG</option><!-- Não esqueça de fechar com </option> -->
+            <option value="RJ">RJ</option>
+            <option valeu="RS" selected>RS</option>
+
+        </select><!-- Não esqueça de fechar com </select> -->
+
+        <br>
+        Observações:
+        <br>
+        <textarea name="mensagem"></textarea>
+        <!-- Nossa última tag é o campo <textarea></textarea> que é usado para criar um campo de texto longo, onde o usuário poderá colocar um texto maior, além de controlar o tamanho da caixa de escrita. -->
+
+        <br>
+        <br>
+        <input type="reset" value="Limpar Campos"><br>
+        <input type="submit" value="Cadastrar">
+        <!-- Outra vez, antes de encerrar o formulário, não esqueça de por um botão para enviar os dados a algum lugar para serem processados. -->
+    </form> <!-- Não esqueça de fechar seu formulário -->
+
+    <br><br><br><br><br><br>
+
+    <h2>HTML 5</h2>
+    <form method="GET">
+        <p>Para criar um formulário usando um seletor de COR, user o input type="color" OBS: Alguns navegadores não funciona ainda esse recurso do HTML5</p>
+        <input type="color" name="color">
+
+        <p>Depois você pode usar o seletor de datas com o type="date" e pode também especificar um range entre a data máximo e minima usando max="" e min="" </p>
+        <input type="date" max="2021-01-02" min="2020-12-01" name="data">
+
+        <p>Colocando um type="datatime-local" você também pode adicionar um relógio ao calendário.</p>
+
+        <input type="datetime-local" name="timelocal">
+
+        <p>Para por uma entrada de arquivos use o input type="file" <strong>PARA ARQUIVOS O METHOD DO FORMULÁRIO DEVE SER DO TIPO POST</strong> </p>
+        <input type="file" name="arquivo">
+
+        <p>Para criar um campo de entrada exclusiva para numeros usa-se type="number" Você também pode aplicar um max="" e min="" para estipular os numeros máximos e minimus que serão aceitos.</p>
+        <input type="number" name="numeros">
+        
+        <p>Agora se você quiser criar uma barra de rolagem horizontal para que o usuario escolha um range, você usará type="range" também é possível usar min e max.</p>
+        <input type="range" name="range">
+
+        <p>Para aceitar numéros telefónicos, usa-se type="tel". Na pratica ele serve para que no telefone o navegador abra o teclado numerico do telefone para o usuário.</p>
+        <input type="tel" name="tel">
+
+        <p>Outro input já conhecido é o type="email" que serve para que o html possa aceitar ou não uma determinada entrada. Se ela for uma entrada do tipo email ele aceitará, se não, não permitirá que o usuário envie o formulário.</p>
+        <input type="email" name="email">
+
+    </form>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+</body>
+
+</html>

@@ -67,3 +67,17 @@ function calculadora2 (valor3, valor4){
 };
 calculadora2(5,2);
 console.log(result);
+
+// Por fim você também pode usar funções dentro de objetos, veja:
+
+var al1 = {
+    nome: "João",
+    nota1: [6, 9],
+
+    calc1: function () {
+        return (this.nota1[0] + this.nota1[1]) / 2; //Use "this" para indicar que os arrays que você quer usar faz parte desse objeto e não de outro. O This é usado exclusivamente para isso e só é usado dentro de um objeto.
+    } 
+}
+
+console.log("O nome dele é: " + al1.n);
+console.log(al1.calc1());

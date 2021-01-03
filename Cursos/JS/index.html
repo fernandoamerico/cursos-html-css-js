@@ -9,6 +9,7 @@
             color: blue;
         }
     </style>
+
 </head>
 <body>
     <h1 id="titul0">Curso de JS</h1>
@@ -22,6 +23,29 @@
 
     <p novoatt="Novo atributo" id="p4" class="className">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, laudantium facilis amet voluptatem odio cum dolore fuga a odit consequuntur ipsa corporis consequatur molestias obcaecati sed, fugit doloribus voluptates incidunt!</p>
 
-    <script src="./js/22-Chamado-Elementos-HTML.js"></script>
+    
+    <!-- Eventos DOM -->
+    <!-- Essa parte só será estudada a partir da aula 24-DOM-Events.js -->
+    <h2 onclick="console.log('Meu H1 foi Clicado')">DOM Events</h2>
+    
+    <!-- Veha essa função no documento Js. -->
+    <h3 onclick="clicar()">Clique</h3>
+
+    <!-- Podemos usar This para mudar a cor de um elemento -->
+    <!-- No caso do título, o this passa a ser o próprio elemento, sendo assim, podemos chamar o método style do js e o atributo color e passar um valor para esse atributo, no nosso exempro, vamos mudar a cor do elemento para vermelho -->
+    <h3 onclick="this.style.color='red'"> mudar a cor</h3>
+    <!-- Para você entender melhor, o que foi feito aqui é, usamos a palavra chave this que muda de acordo com o scopo a qual ela está sendo atribuída, nesse scopo ela passa a ser o próprio elemento h3, depois chamamos o método style do js que possue o atributo color que recebe valores de cores. Então atribuímos o valor "red" pra esse valor, sendo assim, quando o usuário clicar, ele irá ativar esse comando que irá mudar a cor de this que seria o nosso próprio elemento. -->
+
+    <!-- Também podemos trabalhar com inputs: -->
+    <h4 id="h4">Texo para Modificar 1</h4>
+    <input onchange="changeH4()" type="text">
+
+    <h4 class="h4">Texto para modificar 2</h4>
+    <input onchange="changeH42(this)" type="text">
+
+    <h4 id="oni">Texto para modificar 3</h4>
+    <input oninput="changeHOni(this)" type="text">
+    <script src="./js/24-DOM-Events.js"></script>
 </body>
+
 </html>

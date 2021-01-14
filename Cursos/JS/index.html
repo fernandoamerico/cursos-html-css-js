@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Js</title>
-    <script src="./18-FizzBuzz.js"></script>
+    <style>
+        img {
+            max-width: 100px;
+        }
+
+        .className {
+            color: blue;
+        }
+
+        .div {
+            margin: 10px;
+            padding: 20px;
+            background-color: teal;
+            color: white;
+            display: inline-block;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Curso de JS</h1>
+    <h1 id="titul0">Curso de JS</h1>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laboriosam pariatur provident ad
+        eaque excepturi at suscipit! Laudantium aspernatur saepe, dicta laboriosam, recusandae fugiat nostrum esse
+        adipisci in quae alias.</p>
+    <p class="pa1" id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus fugit ducimus
+        omnis tempora quas, quaerat est quae doloribus voluptatum id? Sapiente sit minus tempore fuga eligendi
+        blanditiis adipisci laboriosam?</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae blanditiis voluptatibus
+        veniam. Magnam cumque reiciendis aut! Pariatur non, nulla eos cupiditate, iusto laudantium, dolore est quaerat
+        accusamus laboriosam in.
+
+        <span style="display:none;">Spam Oculto</span>
+
+    </p>
+
+    <p novoatt="Novo atributo" id="p4" class="className">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+        laudantium facilis amet voluptatem odio cum dolore fuga a odit consequuntur ipsa corporis consequatur molestias
+        obcaecati sed, fugit doloribus voluptates incidunt!</p>
+
+
+    <!-- Eventos DOM -->
+    <!-- Essa parte só será estudada a partir da aula 24-DOM-Events.js -->
+    <h2 onclick="console.log('Meu H1 foi Clicado')">DOM Events</h2>
+
+    <!-- Veha essa função no documento Js. -->
+    <h3 onclick="clicar()">Clique</h3>
+
+    <!-- Podemos usar This para mudar a cor de um elemento -->
+    <!-- No caso do título, o this passa a ser o próprio elemento, sendo assim, podemos chamar o método style do js e o atributo color e passar um valor para esse atributo, no nosso exempro, vamos mudar a cor do elemento para vermelho -->
+    <h3 onclick="this.style.color='red'"> mudar a cor</h3>
+    <!-- Para você entender melhor, o que foi feito aqui é, usamos a palavra chave this que muda de acordo com o scopo a qual ela está sendo atribuída, nesse scopo ela passa a ser o próprio elemento h3, depois chamamos o método style do js que possue o atributo color que recebe valores de cores. Então atribuímos o valor "red" pra esse valor, sendo assim, quando o usuário clicar, ele irá ativar esse comando que irá mudar a cor de this que seria o nosso próprio elemento. -->
+
+    <!-- Também podemos trabalhar com inputs: -->
+    <h4 id="h4">Texo para Modificar 1</h4>
+    <input onchange="changeH4()" type="text">
+
+    <h4 class="h4">Texto para modificar 2</h4>
+    <input onchange="changeH42(this)" type="text">
+
+    <h4 id="oni">Texto para modificar 3</h4>
+    <input oninput="changeHOni(this)" type="text">
+    <br>
+
+    <img
+        src="https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/control-gamer-celular-ipega-48135-default-1.jpg">
+    <br>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="div">Click</div>
+
+    <h4 id="jsEvent">jsEvent</h4>
+
+    <h4 class="eventL">Add Event Listener</h4>
+
+    <h2>Elementos Pai e Filho JS</h2>
+    <div class="divPai">
+        <h5>Div Pai</h4>
+        <p>Lorem ipsum, dolor sit amet.</p>
+    </div>
+
+    <div class="divFilho">
+        <h5>Div Filho</h4>
+        <p>Lorem ipsum dolor sit, amet.</p>
+    </div>
+
+
+
+
+
+
+    <script src="./js/25-Elementos-Pai-e-Filhos.js"></script>
 </body>
+
 </html>

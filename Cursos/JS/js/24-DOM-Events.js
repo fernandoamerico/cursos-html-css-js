@@ -35,3 +35,36 @@ function changeHOni(v2){
     c.innerText = v2.value;
 }
 
+// Com as funções abaixo, temos uma div que ao ter o mouse passado em cima dela, mudará alguns valores styles e quando o mouse sai de cima dela, esses valores alteram outra vez.
+
+function mOver(m) {
+    m.style.backgroundColor = "blue";
+    m.style.color = "white";
+}
+function mOut(o){
+    o.style.backgroundColor = "teal";
+
+}
+
+//ONLOAD=""
+//É um evento que irá esperar o elemento a qual ele foi aplicado terminar de carregar para executar algo.
+
+
+//Eventos diretamente no Js:
+//Caso você queira passar um evento a uma tag HTML usando Js, você irá fazer:
+
+//Primeiro criamos uma variável que terá nosso elemento.
+let jsEvent = document.getElementById("jsEvent");
+
+//Observe que o onclick está recebendo a função mCor, mas ela não está sendo executada, isso porque o objetivo é que o onclick passe a ter o mesmo valor da função mas não a execute, dessa forma, ele vai ter a função apenas como referencia. Assim quando o onclick for ativado, quem estará sendo ativado será a função que agora tem o onclick apontando-a.
+jsEvent.onclick = mCor;
+
+//Por fim usaremos o this para aplicar as mudanças em nosso elemento, porque recorde que quem está iniciando nossa função é o nosso evento onclick ao ser clicado, então o this passa a ser o nosso próprio elemento.
+function mCor(){
+    this.style.color = "green";
+}
+
+//Uma outra maneira de fazer exatamente a mesma coisa é com o método addEventListener:
+
+let eL = document.getElementsByClassName("eventL")[0];
+eL.addEventListener("click", mCor);

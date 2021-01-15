@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/15-style.css">
+    <title>Float</title>
+</head>
+
+<body>
+    <h1>Float</h1>
+    <p>O float é usado para fazer com que um elemento "flutue" do lado de outro elemento.</p>
+    <br>
+    <div class="container">
+        <h3>Sem float</h3>
+        <img class="s-img" src="../HTML/Conceitos-Basicos/imgs/logo.png">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae ipsum quam, a nulla
+            laudantium
+            aperiam eius. Perferendis ratione aspernatur unde inventore quod porro quam ipsum sit, libero iure aut!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus molestias iure corporis,
+            consectetur
+            repudiandae repellat quam! Officiis, rem, totam nostrum ut quia laborum nihil architecto consectetur
+            doloribus
+            repudiandae doloremque!
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h3>Com float: left;</h3>
+        <img class="c-img" src="../HTML/Conceitos-Basicos/imgs/logo.png">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae ipsum quam, a nulla
+            laudantium
+            aperiam eius. Perferendis ratione aspernatur unde inventore quod porro quam ipsum sit, libero iure aut!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus molestias iure corporis,
+            consectetur
+            repudiandae repellat quam! Officiis, rem, totam nostrum ut quia laborum nihil architecto consectetur
+            doloribus
+            repudiandae doloremque!
+        </p>
+    </div>
+
+    <h3>Clear</h3>
+    <p>Para indicar que um elemento não irá interagir com outro elemento que tem a propriedade float aplicada, você pode
+        usar a propriedade clear, assim o elemento irá manter sua posição e ignorar o outro elemento float, veja:</p>
+    <div class="div-float">Div com float aplicado</div>
+    <p class="n-clear">ESSE PARÁGRAFO NÃO TEM O ATRIBUTO CLEAR APLICADO<br>
+        Por isso ele flutua do lado da div.
+    </p>
+    <p class="s-clear">JÁ ESSE PARÁGRAFO TEM O ATRIBUTO CLEAR APLICADO<br>
+        Por iss ele não flutua do lado da div.
+    </p>
+    <p>OBS: Tanto o float quando o clear podem ter as propriedades, left ou right, sendo que o clear também tem a propriedade "both" e "none" que é default.
+    Se você por uma imagem flutuando do lado direito mas usar o clear do lado esquedo, então o elemento irá flutuar
+    normalmente, pois o clear está apontando para o lado esquerdo, mas o elemento está flutuando do lado direito.
+    </p>
+
+    <h2>Bonus: Criando um menu com float</h2>
+    <ul>
+        <li>Home</li>
+        <li>Planos</li>
+        <li>Contanto</li>
+    </ul>
+</body>
+
+</html>

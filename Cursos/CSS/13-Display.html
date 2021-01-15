@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/11-style.css">
+    <title>Display</title>
+</head>
+
+<body>
+    <h1>Display</h1>
+    <div class="container">
+        <h3>Display: block;</h3>
+        <p class="p1">O Display block você pode mudar o tamanho e a altura mas por natureza ele sempre ficará na proxima
+            linha e nunca no mesma linha do elemento anterior.</p>
+
+        <div class="div1">Essa é uma div que é um exemplo de um display block</div>
+
+        <div class="div2">Aqui é outra div que por padrão aparecerá em outra linha porque ela tem o display block
+            aplicado por padrão.</div>
+
+        <p class="p2">Esse é um parágrafo normal que também tem como padrão display block</p>
+
+        <p class="p3">E aqui é o outro parágrafo que aparecerá na proxima linha por ter o display block.</p>
+
+        <div class="div3">
+            <p class="p4">Esse parágrafo está dentro de uma div que tem um padding de 5px e cor diferente para destacar
+                e tem
+            <div class="div4"> "uma outra DIV no meio", </div> depois termina o parágrafo aqui mas ele não recebe a cor
+            do inicio porque a div no meio interrompe o fluxo, assim ele fica com a cor da div inicial. </p>
+        </div>
+
+        <p>*Lembre-se que o parágrofo ele vem com margens que de forma natural ele tenha um espaçamento superior e
+            inferir, diferente das divs que são mais unidas.</p>
+
+
+        <h3>Display: inline;</h3>
+        <p>As tags se mantem na mesma linha mas você não pode mudar a altura ou largura da mesma.</p>
+
+        <p class="p5">Esse é um parágrafo que como vimos tem por natureza a propriedade block mas aqui <span
+                class="span1"> "temos um spam dividindo o parágrafo que tem a propriedade inline"</span> e depois temos
+            o final do parágrafo aqui.</p>
+
+        <h3>Display: inline-block</h3>
+
+        <p>Uma tag com esse atributo irá se manter na mesma linha do elemento anterior mas você poderá modificar a
+            altura e a largura do elemento.</p>
+        <div class="div5">
+            <p class="p6">Esse aqui é um parágrafo com o elemento block como padrão que está dentro de um div com cor diferente para destacar e padding de 5px.
+            <span class="span2">"E aqui temos um span com o atributo inline-block aplicado com largura de 1000px e altura de 200px"</span> e por fim terminamos nosso parágrafo.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

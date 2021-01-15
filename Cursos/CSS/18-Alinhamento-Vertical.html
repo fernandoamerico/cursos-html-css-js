@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/16-style.css">
+        <title>Alihamento Vertical</title>
+    </head>
+    <body>
+        <h1>Alinhamento Vertical</h1>
+        <p>Existe diferentes maneiras de centralizar um conteúdo dentro de um elemento.</p>
+        <h3>text-align e line-height</h3>
+        <p>Uma das maneira para centrarizar um conteúdo dentro de um elemento seria usando o atributo text-align e o atributo line-height. 
+        <br>
+        Usando <strong> texto-align: center/left/right </strong> você pode estipular onde o conteúdo de tal elemento irá ficar horizontalmente localizado.
+        <br>
+        <br>
+        Já utilizando <strong> line-height </strong> como o próprio nome ja diz, você irá estipular a altura da linha do conteúdo, dessa forma, o conteúdo sempre irá ficar centralizado no meio da linha, contudo, usando esse método, você deverá saber a altura do elemento pai, para que o elemento filho a qual receberá a propriedade line-height tenha a mesma altura.
+        </p>
+
+        <div class="card1">
+            <div class="card-01">line-height: 200px;</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h3>Position + top e left + transform: translate();</h3>
+        <p>Uma maneira mais recomendada de centralizar um conteúdo no meio de um elemento seria usando os atributos position: absolute; + left: 50%; + top: 50%; + transform: translate(-50% -50%);</p>
+        <br>
+        <h4>Position: absolute;</h4>
+        <p>Como ja vimos, o atributo position serve para manipular a posição de um elemento referente a sua posição inicial ou a de outros elementos, ao usar a propriedade "absolute" indicamos que a posição de tal elemento irá ser basiada no elemento pai e não em sua posição inicial como de costume.</p>
+        <br>
+        <h4>Left e Top</h4>
+        <p>Já usando as propriedades Left e Top, indicamos ao elemento que ele terá um espaçamento extra a sua esquerda e um outro espaçamento extra superior. Como nosso elemento tem a propriedade "absolute" ele irá calcular esse espaçamento a partir do elemento pai e não de sua posição inicial.</p>
+        <h4>Transform: translate()</h4>
+        <p>Por fim usamos a propriedade transform ara passar o atributo "translate" ao nosso elemento. Esse atributo serve para deslocar o elemento para algum ponto no eixo X ou Y. Usamos esse atributo pois usando apenas o left e o top, o elemento irá usar como base o elemento pai em referencia a borda superior e esqueda do conteúdo. Isso significa que o contato Superior Esquedo irá ficar centralizado e não o centro da div. Usando o atributo translate() indicamos ao elemento que ele se deslocará -50% a sua esquerda e -50% ao seu topo, tendo como referencia a sua margem superior e a sua margem esqueda, centralizando assim o elemento perfeitamente no meio.</p>
+
+        <p>NO EXEMPLO ABAIXO USAMOS OS ATRIBUTOS TANTO EM UMA DIV (MARCADA EM LARAMJA) COMO TAMBÉM EM UM PARÁGRAFO COM O NOME (FERNANDO).</p>
+        <div class="card2">
+            <div class="card-02">
+                <p class="p">Fernando</p>
+            </div>
+        </div>
+    </body>
+</html>

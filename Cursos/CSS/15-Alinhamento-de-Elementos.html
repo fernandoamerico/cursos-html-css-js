@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/13-style.css">
+        <title>Alinhamento de Elementos</title>
+    </head>
+    <body>
+        <h1> Alinhamentos de Elementos</h1>
+        <p>Para alinhar elementos no centro da tela de forma automática, você pode usar margin: auto, veja:</p> 
+        <div class="auto"></div>
+        <p>Para alinha no lado direito, você pode usar margin: right, veja:</p>
+        <div class="right"></div>
+        <br>
+        <p>OBS: Esse tipo de atributo só funciona com elementos que tenha display block, ou seja, imagens e outros elementos que tenha um display inline ou inline-block não aceitam esse tipo de formatação. Para conseguir por um elemento que um display inline ou inline-block alinhado, você pode colocar o elemento que você quer manipular a posição dentro de uma div e então usar o align-text: center/right/left e assim o elemento dentro dessa div irá agir como texto já que ele possui o mesmo atributo, veja:</p>
+        <div class="img">
+            <img src="../HTML/Conceitos-Basicos/imgs/logo.png">
+        </div>
+
+        <p>Ou você pode simplesmente mudar o display do elemento para block e assim manipular sua posição normalmente como se ele fosse uma div, veja:</p>
+
+        <img class="img2" src="../HTML/Conceitos-Basicos/imgs/logo.png">
+    </body>
+</html>

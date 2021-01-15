@@ -1,0 +1,30 @@
+.container {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.c-img {
+    float: left;
+}
+
+.div-float {
+    background-color:greenyellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.s-clear {
+    clear: left;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 10px;
+    background-color:hotpink;
+    margin: 10px;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Bungee;
+    src: url(../fonts/Bungee/Bungee-Regular.ttf)
+}
+@font-face {
+    font-family: Font2;
+    src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    font-style: italic;
+    font-variant: small-caps; /* Small caps é usado para deixar todas as letras maiusculas mas as que estão verdadeiramente maiuscula no texto original ficaram um pouco maior que as que estão menúsculas no texto original. */
+}
+
+.p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.p2 {
+    font-family: Bungee;
+}

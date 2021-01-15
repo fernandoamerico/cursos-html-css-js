@@ -1,0 +1,30 @@
+.hidden {
+    background-color: paleturquoise;
+    color: palevioletred;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.scroll {
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.scroll-y {
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.auto {
+    background-color: coral;
+    color: darkgreen;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}

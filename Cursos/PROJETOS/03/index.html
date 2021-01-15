@@ -4,11 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sorteo</title>
+        <style>
+            div {
+                background-color: #0f0f0f;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        </style>
     </head>
     <body>
         <h1>Sorteio</h1>
         <h2 id="h2">Pessoal Sorteada</h2>
         <button onclick="sortear()">Sortear</button>
+
+        <hr>
+        <h2 id="HCor"> Mudando Cor</h2>
+        <div></div>
+        <button onclick="MudarCor()" type="button" value="Mudar Cor">Mudar Cor</button>
+
+        <hr>
+        <h2>Mudando Cor Automático</h2>
+        <div class="div2"></div>
+        <button onclick="StartCor()" class="mCorAuto" type="button">Start</button>
+
         <script src="./script.js"></script>
     </body>
 </html>

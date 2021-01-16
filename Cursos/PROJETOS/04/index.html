@@ -4,19 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Acerte o quadrado</title>
+    <title>Clicks Mizerávies</title>
 
 </head>
 
 <body>
     <div class="container">
-        <h1>Clique no quadrado</h1>
-        <div class="geral">
-            <div onclick="mudar()" class="div"></div>
+        <div class="conteudo">
+            <div class="mClicks">
+                <p id="mClicks">Clicks Mizerávies: 0 </p>
+            </div>
+            <div class="seLiga">
+                <p id="seLiga">Se ligue não: 15s </p>
+            </div>
+
+            <div onclick="start()" class="inicio">
+            <p> <strong>Tu só veio passar vergonha ...</strong> <br>
+            Tente clicar o máximo de vezes no quadrado verde, antes que o tempo acabe!</p>
+            </div>
+            <div class="geral">
+                <div onclick="mudar()" class="quadrado">
+                </div>
+            </div>
         </div>
     </div>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

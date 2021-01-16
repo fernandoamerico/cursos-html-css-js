@@ -4,24 +4,67 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.geral {
-    background-color: #000;
-    width: 85vw;
+.conteudo {
+    padding-top: 50px;
+    width: 850px;
+    height: 500px;
+    margin: auto;
+}
+.inicio {
+    background-color: greenyellow;
+    width: 850px;
     height: 500px;
     margin: auto;
     position: relative;
-    top: 20px;
+    top: 10px;
+    
+
 }
 
-.div {
+.inicio p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.geral {
+    display: none;
+    background-color: #000;
+    width: 850px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.quadrado {
     background-color: greenyellow;
     width: 50px;
     height: 50px;
     position: absolute;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-h1 {
-    text-align: center;
-    margin-top: 10px;
+
+.mClicks {
+    display: inline-block;
+}
+.seLiga {
+    float: right;
+}
+
+.mClicks p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+}
+
+.seLiga p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
 }

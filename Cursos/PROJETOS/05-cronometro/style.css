@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+.title {
+    color: white;
+    width: 100vw;
+    background-color: rgb(255, 90, 24);
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.title h1{
+    font-weight: 500;
+}
+
+.container {
+    background-color:rgb(15, 15, 15);
+    width: 100vw;
+    height: 500px;
+}
+
+.content {
+    /* background-color: rgb(6, 44, 4); */
+    width: 95vw;;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+.cronometro{
+    text-align:center;
+    padding-top: 50px;
+}
+
+.time-box {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    /* background-color:sienna; */
+}
+
+.time-box p {
+    margin-bottom: 20px;
+}
+
+.horas, .minutos, .segundos {
+
+    background-color: rgb(255, 90, 24);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.time {
+    color: rgb(15, 15, 15);
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.botoes {
+    margin-top:20px;
+}
+.crono-bnt {
+    padding: 10px;
+    width: 135px;
+    font-size: 20px;
+    margin: 8px 5px;
+    border-radius: 5px;
+    border: none;
+}

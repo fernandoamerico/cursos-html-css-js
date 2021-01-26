@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(250, 250, 250);
+  color: #262626;
+}
+
+a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+/* header - nav */
+.header {
+  background-color: white;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  width: 100vw;
+  height: 55px;
+}
+
+.header .header-content {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* logo area */
+.header .header-content #logo {
+  display: inline;
+  float: left;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+/* search area */
+.header .header-content .search {
+  display: inline-block;
+  position: relative;
+  margin-left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .header-content .search .search-box {
+  border-radius: 5px;
+}
+
+.header .header-content .search .search-box > input {
+  background-color: #fafafa;
+  font-size: 12px;
+  width: 220px;
+  height: 25px;
+  border: 1px solid #dbdbdb;
+  padding: 14px;
+  font-family: FontAwesome, "Montserrat", sans-serif;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.header .header-content .search .search-box > input::placeholder {
+  color: #8e8e8e;
+}
+
+.header .header-content .search .search-box > input:focus {
+  outline: none;
+}
+
+/* icons area */
+.header .header-content .icons {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .header-content .icons i {
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+
+.header .header-content .icons a {
+  color: #262626;
+}
+/* mini profile photo */
+.header .header-content .img-mini-profile {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 10px;
+  padding: 1px;
+  border: 1.8px solid black;
+  border-radius: 50px;
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .header-content .img-mini-profile a > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* content */
+.main-content {
+  width: 70%;
+  margin: 0 auto;
+  height: 280px;
+}
+
+/* profile photo */
+.main-content .head-profile {
+  width: 310px;
+  height: 280px;
+  float: left;
+}
+
+.main-content .head-profile .photo {
+  position: relative;
+  top: 10%;
+  left: 20%;
+}
+
+.main-content .head-profile .photo a > img {
+  border-radius: 50%;
+}
+
+/* profile content */
+.main-content .profile-content {
+  width: calc(100% - 310px);
+  height: 70px;
+  margin-top: 20px;
+  padding: 20px 0;
+  float: right;
+}
+
+/* profile title */
+.main-content .profile-name {
+  float: left;
+}
+
+.main-content .profile-name h2 {
+  font-weight: 300;
+}
+
+/* profile edit button */
+.main-content .profile-edit {
+  width: 100px;
+  height: 100%;
+  margin: 0px 10px 0px 15px;
+  float: left;
+  text-align: center;
+}
+
+.main-content .profile-edit > a {
+  background-color: #fafafa;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6px 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.main-content .profile-edit > a:focus {
+  outline: none;
+}
+
+/* profile config button */
+.main-content .profile-conf {
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+
+
+.main-content .profile-conf a > i {
+  position: relative;
+  top: 2px;
+  font-size: 25px;
+}
+
+/* profile data */
+.main-content .profile-dates {
+  width: calc(100% - 310px);
+  height: 40px;
+  float: left;
+}
+
+.main-content .profile-dates p {
+  display: inline-block;
+  font-size: 14px;
+}
+.main-content .profile-dates p + p {
+  margin-left: 40px;
+}
+
+/* profile dateils */
+.main-content .profile-details {
+  width: calc(100% - 310px);
+  height: 160px;
+  float: left;
+}
+
+.main-content .profile-details p {
+  font-size: 15px;
+  margin: 5px 0px;
+}
+
+.main-content .profile-details a {
+  color: #00376b;
+}

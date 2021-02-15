@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fdfdfd;
+  background-color: #383433;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #85869634;
+  border-radius: 10px;
+  width: 5px;
+}
+
+.container {
+  background-color: #1f1d2b;
+  height: 1000px;
+
+}
+/* ### LEFT MENU ### */
+/* Left Sidebar */
+
+.container #sidebar-left {
+  width: 60px;
+  height: 100%;
+  float: left;
+}
+.container .sidebar-left {
+  position: fixed;
+  width: 60px;
+  height: 100vh;
+  border-right: 1px solid #353340;
+}
+
+/* Logo */
+.container .sidebar-left .logo {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.container .sidebar-left .logo .logo-body {
+  background-color: #22b07d;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-left .logo i {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Menu Icons Area */
+.container .sidebar-left .menu-icons {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-left .menu-icons i {
+  color: #7f8090;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.container .sidebar-left .menu-icons .fa-podcast {
+  color: #f75353;
+}
+
+.container .sidebar-left .conf-icon {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 35%;
+  transform: translateY(-25%);
+}
+
+.container .sidebar-left .conf-icon i {
+  font-size: 25px;
+  color: #7f8090;
+}
+
+/* ### TOP HORIZONTAL MENU ### */
+/* Header */
+.header {
+  background-color: #1f1d2b;
+  float: left;
+  width: calc(100% - 60px);
+  height: 60px;
+}
+
+/* Search */
+.header .search-area {
+  background-color: #353340;
+  width: 500px;
+  height: 25px;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .search-area input {
+  background-color: #353340;
+  color: #22b07d;
+  border: none;
+  height: 21px;
+  width: calc(100% - 20px);
+}
+
+.header .search-area .search-icon {
+  background-color: #353340;
+  float: right;
+  width: 18px;
+  height: 16px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .search-area .search-icon i {
+  color: #585864;
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+  top: 50%;
+  transform: translateY(calc(-50% - 6px));
+}
+
+.header .search-area input::placeholder {
+  color: #585864;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header .search-area input:focus {
+  outline: none;
+}
+
+/* Profile */
+.header .profile {
+  float: right;
+  height: 100%;
+  margin: 0 30px;
+}
+
+.header .profile .profile-body {
+  height: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .profile .profile-body img {
+  width: 30px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .profile .profile-body p {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  transform: translateY(-40%);
+}
+.header .profile .profile-body i {
+  color: #858696;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  transform: translateY(-50%);
+}
+
+/* Norify Area */
+.header .notify {
+  color: #858696;
+  float: right;
+  margin: 0 10px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.header .notify i {
+  position: relative;
+  top: 50%;
+  transform: translateY(calc(-50% - 5px));
+}
+
+/* ### Main Content ### */
+.main-content {
+  display: inline-block;
+  width: 833px;
+  margin-left: 20px;
+  height: 940px;
+}
+
+.main-content .video-body {
+  width: calc(65% - 2px);
+  height: 71.2vh;
+  margin-bottom: 50px;
+}
+video {
+  height: 468px;
+  border-radius: 10px;
+}
+
+.main-content .video-details {
+  height: 332px;
+  width: 580px;
+  float: left;
+}
+
+.main-content .video-details .author-area {
+  height: 60px;
+  padding: 20px 0;
+}
+
+.main-content .video-details .author-area .author-photo {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: url("./img/author-photo.jpg") no-repeat center/cover;
+  border-radius: 50px;
+}
+
+.main-content .video-details .author-area .author {
+  float: left;
+  margin: 0 20px;
+}
+.main-content .video-details .author-area .author h3 {
+  float: left;
+  font-size: 13px;
+}
+
+.main-content .video-details .author-area .author p {
+  color: #858696;
+  font-size: 12px;
+}
+
+.main-content .video-details .author-area .author .status-icon {
+  background-color: #22b07d;
+  width: 5px;
+  height: 5px;
+  margin-left: 4px;
+  float: left;
+}
+
+.main-content .video-details .video-title {
+  margin: 15px 0px;
+}
+
+.main-content .video-details .video-title h2 {
+  font-size: 20px;
+}
+
+.main-content .video-details .description p {
+  color: #858696;
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+.main-content .video-datos {
+  float: right;
+  width: 233px;
+  height: 472px;
+}
+
+.main-content .video-datos .video-int-btn {
+  padding: 20px 0px;
+  width: 233px;
+  height: 75px;
+  float: right;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content .video-datos .video-int-btn button {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  background-color: #353340;
+  color: #fdfdfd;
+  width: 104px;
+  height: 35px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+
+.main-content .video-datos .video-int-btn button i {
+  font-size: 13px;
+}
+
+.main-content .video-datos .video-int-btn button:focus {
+  outline: none;
+}
+
+.main-content .video-datos .video-int-btn .followed {
+  background-color: #ea5f5f;
+}
+
+.main-content .video-datos .video-int-btn i {
+  margin-right: 4px;
+}
+.main-content .video-datos .video-statistics i {
+  color: #7f8090;
+  font-size: 10px;
+  margin-right: 8px;
+}
+
+.main-content .video-datos .video-statistics p {
+  color: #858696;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.container .sidebar-right {
+  width: 430px;
+  height: 468px;
+  float: right;
+  padding: 0px 40px;
+}
+.container .sidebar-right .chat {
+  background-color: #252836;
+  width: 350px;
+  height: 468px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.container .sidebar-right .chat .top-chat {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-bottom: 1px solid #353340;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.container .sidebar-right .chat .top-chat h4 {
+  font-size: 13px;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-right .chat .top-chat p {
+  font-size: 10px;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-right .chat .chat-body {
+  padding: 0 20px;
+  width: 100%;
+  height: 350px;
+  overflow: auto;
+}
+
+.container .sidebar-right .chat .chat-body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.container .sidebar-right .chat .chat-body::-webkit-scrollbar:vertical {
+  width: 4px;
+}
+
+.container .sidebar-right .chat .chat-body::-webkit-scrollbar-thumb {
+  background-color: #85869634;
+  border-radius: 10px;
+  width: 5px;
+}
+.container .sidebar-right .chat .chat-body .msg-area {
+  width: 290px;
+  height: 70px;
+  margin: auto;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.container .sidebar-right .chat .chat-body .msg-area .msg-photo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.container .sidebar-right .chat .chat-body .msg-area .msg-photo img {
+  width: 70px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -25%;
+}
+
+.container .sidebar-right .chat .chat-body .msg-area .rank-symbol {
+  width: 15px;
+  height: 15px;
+  float: right;
+  font-size: 10px;
+  text-align: center;
+}
+.container .sidebar-right .chat .chat-body .msg-area .rank-symbol i {
+  color: rgb(255, 230, 0);
+  font-size: 7px;
+  position: relative;
+  top: 50%;
+  transform: translateY(calc(-50% - 2px));
+}
+
+.container .sidebar-right .chat .chat-body .msg-area .msg-user-name {
+  font-size: 10px;
+}
+
+.container .sidebar-right .chat .chat-body .msg-area .msg-body {
+  color: #858696;
+  font-size: 12px;
+}
+
+.container .sidebar-right .chat .msg-icon {
+  width: 55px;
+  height: 55px;
+  float: right;
+}
+
+.container .sidebar-right .chat .msg-icon .icon-body {
+  background-color: #6c5ecf;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-right .chat .msg-icon .icon-body i {
+  font-size: 17px;
+  color: white;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.container .sidebar-right .chat .chat-text-area {
+  width: calc(100% - 55px);
+  height: 55px;
+  text-align: center;
+  padding: 10px 5px 10px 25px;
+  float: left;
+}
+
+.container .sidebar-right .chat .chat-text-area input {
+  background-color: #2d303e;
+  color: #22b07d;
+  border: none;
+  padding-left: 20px;
+  border-radius: 17px;
+  width: 100%;
+  height: 35px;
+}
+
+.container .sidebar-right .chat .chat-text-area input:focus {
+  outline: none;
+}
+
+.container .sidebar-right .chat .chat-text-area input::placeholder {
+  color: #858696;
+}
+
+.sidebar-right .most-popular-area {
+  margin: 10px 0;
+  padding: 10px;
+  height: 450px;
+}
+
+.sidebar-right .most-popular-area .popular-video {
+  margin: 15px 0;
+}
+
+.sidebar-right .most-popular-area .popular-video .video-thumb {
+  width: 151.109px;
+  height: 85px;
+  margin: 0px 10px 5px 0px;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sidebar-right .most-popular-area .popular-video .video-thumb img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.sidebar-right .most-popular-area .popular-video .popular-video-title {
+  width: 168px;
+  height: 85px;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.sidebar-right .most-popular-area .popular-video .popular-video-author {
+  font-size: 12px;
+}
+
+.sidebar-right .most-popular-area .popular-video .popular-video-date {
+  font-size: 10px;
+}
